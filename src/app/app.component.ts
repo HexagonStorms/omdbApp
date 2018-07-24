@@ -15,7 +15,7 @@ export class AppComponent {
 
   constructor(public http: HttpClient) {}
 
-  searchShow() {
+  searchShows() {
     console.log(this.input);
     console.log('Searching show...');
 
@@ -27,6 +27,4 @@ export class AppComponent {
     });
 
   }
-
-  
 }

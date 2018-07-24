@@ -1,11 +1,14 @@
-<h1>Search For Your Favorite Movie!!!</h1>
+<div class="container">
+    <h1 class="text-center">OMDB Movie Api Search</h1>
 
-<input type="text" [(ngModel)]="input">
-
-<button (click)="searchShow()">Search</button><br>
-
-<p *ngFor="let result of results">
-    {{ result.Title }}
-    {{ result.Year }}
-</p>
-
+    <div class="row">
+        <div class="col">
+            <div class="input-group mb-3" (click)="searchShows()">
+                <input [(ngModel)]="input" type="text" class="form-control" placeholder="Enter A Movie">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
